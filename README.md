@@ -2,6 +2,86 @@
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:FFB84D,100:6B3FA0&height=250&section=header&text=Adedokun%20Paul%20Inioluwa&fontSize=60&fontAlignY=35&animation=twinkling&fontColor=FFF8E7&desc=Full-Stack%20Developer%20%7C%20AI/ML%20Enthusiast&descAlignY=55&descAlign=50" />
 </div>
 
+<!-- GLITCH BANNER: 4harmony55-glitch -->
+<div align="center" style="margin: 20px 0;">
+  <style>
+    @keyframes glitch-skew {
+      0%, 100% { transform: skew(0deg); }
+      10% { transform: skew(2deg); }
+      20% { transform: skew(-3deg); }
+      30% { transform: skew(5deg); }
+      40% { transform: skew(-2deg); }
+      50% { transform: skew(1deg); }
+    }
+    @keyframes glitch-anim-1 {
+      0%, 100% { clip-path: inset(0 0 0 0); transform: translate(0); }
+      20% { clip-path: inset(20% 0 60% 0); transform: translate(-6px, 3px); }
+      40% { clip-path: inset(50% 0 30% 0); transform: translate(6px, -3px); }
+      60% { clip-path: inset(10% 0 40% 0); transform: translate(-4px, 5px); }
+      80% { clip-path: inset(70% 0 10% 0); transform: translate(4px, -2px); }
+    }
+    @keyframes glitch-anim-2 {
+      0%, 100% { clip-path: inset(0 0 0 0); transform: translate(0); }
+      25% { clip-path: inset(30% 0 50% 0); transform: translate(5px, -3px); }
+      50% { clip-path: inset(60% 0 20% 0); transform: translate(-5px, 4px); }
+      75% { clip-path: inset(15% 0 65% 0); transform: translate(3px, -5px); }
+    }
+    @keyframes glitch-flick {
+      0%, 100% { opacity: 1; }
+      5% { opacity: 0.2; }
+      10% { opacity: 1; }
+      15% { opacity: 0.4; }
+      20% { opacity: 1; }
+      85% { opacity: 1; }
+      90% { opacity: 0.1; }
+      95% { opacity: 1; }
+    }
+    .glitch-container {
+      position: relative;
+      display: inline-block;
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 48px;
+      font-weight: 900;
+      color: #FFB84D;
+      letter-spacing: 4px;
+      text-shadow: 3px 0 #ff0040, -3px 0 #00d4ff;
+      animation: glitch-skew 3s infinite;
+    }
+    @media (prefers-color-scheme: dark) {
+      .glitch-container { color: #FFB84D; }
+    }
+    @media (prefers-color-scheme: light) {
+      .glitch-container { color: #8B5CF6; }
+    }
+    .glitch-container::before,
+    .glitch-container::after {
+      content: attr(data-text);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+    }
+    .glitch-container::before {
+      color: #ff0040;
+      z-index: -1;
+      animation: glitch-anim-1 2s infinite linear alternate-reverse;
+    }
+    .glitch-container::after {
+      color: #00d4ff;
+      z-index: -2;
+      animation: glitch-anim-2 3s infinite linear alternate-reverse;
+    }
+  </style>
+  <div>
+    <span class="glitch-container" data-text="4harmony55-glitch">4harmony55-glitch</span>
+  </div>
+  <div style="margin-top: 8px;">
+    <sub style="font-family: monospace; opacity: 0.5; font-size: 14px; letter-spacing: 6px;">⎯ GLITCH ⎯</sub>
+  </div>
+</div>
+<!-- END GLITCH BANNER -->
 <h1 align="center">
   <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="35px"> Hi there, I'm Paul!
 </h1>
